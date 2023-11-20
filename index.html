@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow: hidden;
+            background-color: ;
+        }
+
+        .nav {
+            width: 500px;
+            height: 100vh;
+            background-color: black;
+            float: right;
+            justify-content: ;
+            text-align: center;
+            position: fixed;
+            right: -100%;
+            transition: 1s;
+            align-items: center;
+
+        }
+
+        .nav li a {
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin: 60px 0;
+            color: yellow;
+            font-size: 2.5rem;
+            font-weight: 700;
+            transition: ;
+
+
+        }
+
+
+        .nav li a:hover {
+            border: 2px solid yellow;
+        }
+
+        .nav .bt {
+            font-size: 2.8rem;
+            border: none;
+            background-color: yellow;
+            color: black;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: 0.7s;
+        }
+
+        .nav .bt:hover {
+            border: 3px solid yellow;
+            color: yellow;
+            background-color: black;
+            cursor: pointer;
+        }
+
+        .clickme {
+            margin: 20px;
+            position: absolute;
+        }
+
+        .clickme button{
+            border: none;
+            background-color: yellow;
+            color: black;
+            font-weight: 700;
+            padding: 15px;
+            font-size: 1.5rem;
+            border-radius: 5px;
+        }
+        .clickme button:hover{
+            border: 2px solid yellow;
+            background-color: black;
+            color: yellow;
+            cursor: pointer;
+        }
+        .btclose {
+            padding: 5px;
+            border: none;
+            background-color: yellow;
+            color: black;
+            float: left;
+            margin: 20PX;
+            font-weight: 600;
+        }
+        .btclose:hover{
+            border: 2px solid yellow;
+            background-color: black;
+            color: yellow;
+            cursor: pointer;
+        }
+
+        @media (max-width: 678px ){
+            .nav {
+            width: 250px;
+            height: 100vh;
+            background-color: black;
+            float: right;
+            justify-content: ;
+            text-align: center;
+            position: fixed;
+            right: -100%;
+            transition: 1s;
+            align-items: center;
+
+        }
+
+        .nav li a {
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin: 60px 0;
+            color: yellow;
+            font-size: 1.8rem;
+            font-weight: 700;
+            transition: ;
+        }
+
+        .clickme button{
+            border: none;
+            background-color: yellow;
+            color: black;
+            font-weight: 600;
+            padding: 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        .nav .bt {
+            font-size: 1.5rem;
+            border: none;
+            background-color: yellow;
+            color: black;
+            padding: 6px 14px;
+            border-radius: 20px;
+            transition: 0.7s;
+        }
+        }
+
+        
+        @media (max-width: 419px ){
+            .nav {
+            width: 200px;
+            height: 100vh;
+            background-color: black;
+            float: right;
+            justify-content: ;
+            text-align: center;
+            position: fixed;
+            right: -100%;
+            transition: 1s;
+            align-items: center;
+
+        }
+
+        .nav li a {
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin: 60px 0;
+            color: yellow;
+            font-size: 1.5rem;
+            font-weight: 700;
+            transition: ;
+        }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="nav" id="nav">
+        <button class="btclose" onclick="btclose()">close</button>
+        <li>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">CONTACT</a>
+            <a href="#">CAREER</a>
+        </li>
+        <button class="bt">Contact Us</button>
+    </nav>
+
+    <div class="clickme">
+        <button onclick="openav()" >Click Me</button>
+    </div>
+
+
+    <script type="text/javascript">
+
+        function openav() {
+            var a1 = document.getElementById('nav');
+            nav.style.right = '0%';
+        }
+
+        function btclose() {
+            var a2 = document.getElementById('nav')
+            nav.style.right = '-100%';
+        }
+    </script>
+</body>
+
+</html>
